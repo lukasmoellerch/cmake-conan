@@ -429,7 +429,7 @@ endfunction()
 function(_collect_settings result)
     set(ARGUMENTS_PROFILE_AUTO arch build_type compiler compiler.version
                             compiler.runtime compiler.libcxx compiler.toolset
-                            compiler.cppstd)
+                            compiler.cppstd os)
     set(detected_settings "")
     foreach(ARG ${ARGUMENTS_PROFILE_AUTO})
         string(TOUPPER ${ARG} _arg_name)
